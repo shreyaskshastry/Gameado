@@ -175,7 +175,7 @@ def main():
 		for row in app_list:
 			if ( state["current_index"] < state["to_read_index"] ):
 				print( "state.index =", state["current_index"] )
-				read_and_write_data( "2200", app_reviews_csv, user_reviews_csv, state )
+				read_and_write_data( row[0], app_reviews_csv, user_reviews_csv, state )
 				app_reviews_file.flush()
 				user_reviews_file.flush()
 				state["current_index"] += 1
