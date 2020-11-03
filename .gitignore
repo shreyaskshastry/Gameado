@@ -1,3 +1,6 @@
+# Custom ignores
+**/user_reviews_raw.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
